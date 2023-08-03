@@ -3,20 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
+  <title>Portofolio Kreatif</title>
   <style>
     /* Ganti gaya CSS Anda di sini */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f7f7;
+      background-color: #f5f5f5;
     }
     header {
       background-color: #333;
       color: #fff;
       text-align: center;
       padding: 1rem 0;
+    }
+    nav {
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 5px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #333;
+      color: #fff;
     }
     section {
       max-width: 800px;
@@ -26,8 +43,24 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 4px;
     }
+    .hero {
+      text-align: center;
+      padding: 50px 0;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #333;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #666;
+    }
     .project {
       margin-bottom: 30px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     .project img {
       max-width: 100%;
@@ -35,9 +68,10 @@
     }
     .project h3 {
       margin-top: 10px;
+      color: #333;
     }
     .project p {
-      color: #555;
+      color: #666;
     }
     footer {
       text-align: center;
@@ -49,9 +83,18 @@
 </head>
 <body>
   <header>
-    <h1>Portofolio Saya</h1>
+    <h1>Portofolio Kreatif</h1>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#proyek">Proyek</a>
+      <!-- Tambahkan tautan ke halaman lain sesuai kebutuhan -->
+    </nav>
   </header>
-  <section>
+  <section id="beranda" class="hero">
+    <h1>Selamat datang di Portofolio Kreatif!</h1>
+    <p>Tunjukkan kreativitas Anda melalui proyek-proyek menarik yang telah Anda kerjakan.</p>
+  </section>
+  <section id="proyek">
     <div class="project">
       <img src="link_gambar_proyek_1.jpg" alt="Proyek 1">
       <h3>Nama Proyek 1</h3>
@@ -69,4 +112,5 @@
   </footer>
 </body>
 </html>
+
 
